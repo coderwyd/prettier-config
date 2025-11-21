@@ -1,0 +1,46 @@
+{
+  "name": "@coderwyd/prettier-config",
+  "type": "module",
+  "version": "1.0.2",
+  "packageManager": "pnpm@10.22.0",
+  "description": "Prettier config for @coderwyd",
+  "author": "Donny Wang <donny526@outlook.com> (https://github.com/coderwyd/)",
+  "license": "MIT",
+  "homepage": "https://github.com/coderwyd/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderwyd/prettier-config.git"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --cache",
+    "build": "echo Skip",
+    "format": "prettier -w .",
+    "release": "bumpp"
+  },
+  "peerDependencies": {
+    "prettier": "^3.6.0"
+  },
+  "dependencies": {
+    "@prettier/plugin-oxc": "^0.0.5",
+    "prettier-plugin-tailwindcss": "^0.7.1"
+  },
+  "devDependencies": {
+    "@coderwyd/eslint-config": "^4.8.0",
+    "bumpp": "^10.3.1",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2"
+  },
+  "prettier": "./index.js"
+}
